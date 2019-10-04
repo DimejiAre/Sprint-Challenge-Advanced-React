@@ -5,9 +5,9 @@ class Player extends React.Component {
         const {player} = this.props;
         return(
             <div className="player">
-                <h2>{"Name: " + player.name}</h2>
-                <p>{"Country: " + player.country}</p>
-                <p>{"Searches: " + player.searches}</p>
+                <h2>{<strong>Name</strong>}: {player.name}</h2>
+                <p>{<strong>Country</strong>}: {player.country}</p>
+                <p>{<strong>Searches</strong>}: {player.searches}</p>
             </div>
         )
     }

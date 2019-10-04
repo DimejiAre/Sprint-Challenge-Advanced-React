@@ -21,7 +21,7 @@ class Players extends React.Component {
 
     render(){
         return(
-            <div>
+            <div className='players'>
                 {this.state.players? this.state.players.map(player => (
                     <Player player={player}/>
                 )): null }
