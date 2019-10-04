@@ -4,8 +4,8 @@ class Player extends React.Component {
     render(){
         const {player} = this.props;
         return(
-            <div>
-                <h3>{player.name}</h3>
+            <div className="player">
+                <h2>{"Name: " + player.name}</h2>
                 <p>{"Country: " + player.country}</p>
                 <p>{"Searches: " + player.searches}</p>
             </div>
