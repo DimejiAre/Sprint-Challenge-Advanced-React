@@ -23,7 +23,8 @@ beforeEach(() => {
 });
 
 describe('Players Component', () => {
-    it('runs', () => {
-        tools.debug();
+    it('gets data from axios', () => {
+        const elementWithName = tools.queryByText(/Name/);
+        expect(elementWithName).toBeInTheDocument();
       });
 });

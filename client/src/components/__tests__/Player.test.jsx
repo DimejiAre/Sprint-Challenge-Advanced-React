@@ -12,7 +12,7 @@ beforeEach(()=>{
     tools = rtl.render(<Player player={newPlayer}/>)
 })
 
-describe('Players Component', () =>{
+describe('Player Component', () =>{
     it('contains a name', ()=>{
         const elementWithName = tools.queryByText(/Name/);
         expect(elementWithName).toBeInTheDocument();
