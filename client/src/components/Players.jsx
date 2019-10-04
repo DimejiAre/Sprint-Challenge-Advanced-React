@@ -23,7 +23,7 @@ class Players extends React.Component {
         return(
             <div className='players'>
                 {this.state.players? this.state.players.map(player => (
-                    <Player player={player}/>
+                    <Player key={player.id} player={player}/>
                 )): null }
             </div>
         )
